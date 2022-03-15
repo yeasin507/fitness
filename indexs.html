@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+/* ------> accordion start<----- */
+.accordion{float: left;width: 100%;margin-top: 133px;margin-bottom: 238px;}
+.accordion_item{float: left;width: 100%;overflow: hidden;border-bottom: 1px solid var(--common_white_color);}
+.accordion_button{float: left;width: 100%;margin-bottom: 29px;margin-top: 10px;cursor: pointer;transition: .5s ease-in-out;}
+.accordion_button img{transition: .5s ease-in-out;}
+.accordion_button .none{float: right;padding: 0 53px 0 0;display: block;}
+.accordion_button .block{float: right;padding: 0 53px 0 0;display: none;}
+.accordion_button span{font-family: 'Roboto', sans-serif;font-weight: 700;font-size: 36px;color: var(--common_white_color);}
+.panel{float: left;width: 100%;margin-bottom: 10px;}
+.panel p{font-family: 'Poppins', sans-serif;font-weight: 400;font-size: 20px;letter-spacing: 0.122px;line-height: 45px;padding: 0 0px 16px 3px; color: var(--common_white_color);}
+/* ------> accordion end<----- */
+.trc{float: left;width: 20px;height: 30px; background-color: aqua;margin-bottom: 400px;margin-left: 400px;}
+.ther{transform: rotate(180deg);transition: 0.5s ease-in-out;}
+
+.accordion_button .act{display: none;transition: .5s ease-in-out ;}
+     .accordion_button .acD{display: block;transition: .5s ease-in-out; ;}
+      .achsd{height: auto;transition: .5s ease-in-out; ;}
+        .header_menu{top: 0;left: 0;}
+
+
+
+</style>
+<body style="background-color: coral;">
+    <div class="accordion">
+        <div class="accordion_item" id="accordion1">
+            <div class="accordion_button"><span>Reduce Tax Service</span> <img src="img/Layer 39.png" alt="up" class="none" id="num"><img src="img/Layer 38 copy.png" alt="up" class="block" id="nor"></div>
+            <div class="panel">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                </p>
+            </div>
+        </div>
+        <div class="accordion_item tis" id="accordion2">
+            <div class="accordion_button"><span>Reduce Tax Service</span> <img src="img/Layer 39.png" alt="up" class="none" id="num1"><img src="img/Layer 38 copy.png" alt="up" class="block" id="nor1"></div>
+            <div class="panel" id="panel">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                </p>
+            </div>
+        </div>
+        <div class="accordion_item ris" id="accordion3">
+            <div class="accordion_button"><span>Reduce Tax Service</span> <img src="img/Layer 39.png" alt="up" class="none" id="num2"><img src="img/Layer 38 copy.png" alt="up" class="block" id="nor2"></div>
+            <div class="panel">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="trc">
+
+</div>
+
+</section>
+<script>
+    
+ var accordionButton= document.querySelector(".accordion_button"); 
+ accordionButton.addEventListener("click", tax);
+
+ var accordionButtonI= document.querySelector(".tis");
+ accordionButtonI.addEventListener("click", taxi);
+
+ var accordionButtonII= document.querySelector(".ris");
+ accordionButtonII.addEventListener("click", taxii);
+
+ function tax() {
+  var element = document.getElementById("num");
+  var elementS = document.getElementById("nor");
+  var elementH = document.getElementById("accordion1");
+  element.classList.toggle("act");
+  elementS.classList.toggle("acD");
+  elementH.classList.toggle("achsd");  
+}
+function taxi() {
+ 
+  var element = document.getElementById("num1");
+  var elementS = document.getElementById("nor1");
+  var elementHi = document.getElementById("accordion2");
+  element.classList.toggle("act");
+  elementS.classList.toggle("acD");
+  elementHi.classList.toggle("achsd");
+}
+function taxii() {
+  var element = document.getElementById("num2");
+  var elementS = document.getElementById("nor2");
+  var elementHii = document.getElementById("accordion3");
+  element.classList.toggle("act");
+  elementS.classList.toggle("acD");
+  elementHii.classList.toggle("achsd");
+}
+
+var roted = document.querySelector('.trc');
+
+</script>
+</body>
+</html>
